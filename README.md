@@ -26,7 +26,7 @@ A simple Python desktop application that displays random Kanye West quotes using
    ```bash
    pip install -r requirements.txt
    ```
-3. Ensure the `assets` folder contains `background.png`, `kanye.png`, and `screenshot.png`.
+3. Ensure the `assets` folder contains `background.png` and `kanye.png`.
 
 ## Usage
 
