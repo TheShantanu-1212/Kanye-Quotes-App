@@ -3,7 +3,6 @@ from tkinter import *
 
 ENDPOINT = "https://api.kanye.rest/"
 RED = "#EA2F14"
-ORANGE = "#FB9E3A"
 
 
 def get_quote():
