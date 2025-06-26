@@ -15,10 +15,10 @@ def get_quote():
 # Creating the main window
 window = Tk()
 window.title("Kanye Says...")
-window.config(padx=50, pady=50)
+window.config(padx=50, pady=50, bg="white")
 
 # Creating the canvas to display background image and quote
-canvas = Canvas(width=300, height=414)
+canvas = Canvas(width=300, height=414, bg="white", highlightthickness=0)
 background_img = PhotoImage(file="assets/background.png")
 canvas.create_image(150, 207, image=background_img)
 quote_text = canvas.create_text(
@@ -33,7 +33,9 @@ canvas.grid(row=0, column=0)
 
 # Creating the Kanye button
 kanye_img = PhotoImage(file="assets/kanye.png")
-kanye_button = Button(image=kanye_img, highlightthickness=0, command=get_quote)
+kanye_button = Button(
+    image=kanye_img, highlightthickness=0, command=get_quote, bg="white"
+)
 kanye_button.grid(row=1, column=0)
 
 get_quote()
